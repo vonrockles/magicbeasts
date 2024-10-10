@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Your Magical Creature</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Create Your Magical Creature</h1>
+        <div id="question-container">
+            <p id="question">What is your creature's primary element?</p>
+            <button onclick="selectAnswer('fire')">Fire</button>
+            <button onclick="selectAnswer('water')">Water</button>
+            <button onclick="selectAnswer('earth')">Earth</button>
+            <button onclick="selectAnswer('air')">Air</button>
+        </div>
+        <div id="result-container" style="display:none;">
+            <h2>Your Magical Creature</h2>
+            <div class="creature-animation" id="creature-animation"></div>
+            <p id="creature-description"></p>
+            <button id="save-button" onclick="saveCreature()">Save Creature</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
